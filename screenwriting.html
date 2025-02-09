@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptCraft - Online Screenwriting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="nav-left">
+                <h1 class="logo">ScriptCraft</h1>
+                <button class="btn btn-primary">New Script</button>
+                <button class="btn btn-success">Save</button>
+                <button class="btn btn-secondary">Export PDF</button>
+            </div>
+            <div class="nav-right">
+                <select class="font-select">
+                    <option>Courier New</option>
+                    <option>Courier Prime</option>
+                </select>
+                <button class="font-size">12pt</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container main-content">
+        <!-- Left Sidebar - Templates -->
+        <aside class="sidebar templates-sidebar">
+            <h2 class="sidebar-heading">Templates</h2>
+            <ul class="template-list">
+                <li class="feature-film">Feature Film</li>
+                <li class="episode">TV Episode</li>
+                <li class="rt-film">Short Film</li>
+                <li class="stage-play">Stage Play</li>
+            </ul>
+            
+            <h2 class="sidebar-heading">Recent Scripts</h2>
+            <ul class="recent-scripts">
+                <li>Untitled Project</li>
+                <li>My First Script</li>
+            </ul>
+        </aside>
+
+        <!-- Main Editor Area -->
+        <main class="editor-area">
+            <!-- Formatting Toolbar -->
+            <div class="format-toolbar">
+                <button class="format-btn">Scene Heading</button>
+                <button class="format-btn">Action</button>
+                <button class="format-btn">Character</button>
+                <button class="format-btn">Dialogue</button>
+                <button class="format-btn">Parenthetical</button>
+                <button class="format-btn">Transition</button>
+                <button class="play-dialogue">Play Dialogue</button>
+            </div>
+
+            <!-- Script Page -->
+            <div class="script-page">
+                <div class="scene-heading">INT. COFFEE SHOP - DAY</div>
+                
+                <div class="action">
+                    A cozy coffee shop buzzes with morning activity. Steam rises from cups, laptops glow, and the smell of fresh coffee fills the air.
+                </div>
+
+                <div class="character">SARAH</div>
+                <div class="dialogue">
+                    This is where I do all my best writing.
+                </div>
+
+                <div class="character">ALEX</div>
+                <div class="dialogue">
+                    I can see why. It's perfect.
+                </div>
+
+                <div class="action">
+                    Sarah opens her laptop, revealing dozens of screenplay drafts in her documents folder.
+                </div>
+
+                <div class="transition">
+                    FADE OUT.
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar - Notes & Outline -->
+        <aside class="sidebar notes-sidebar">
+            <h2 class="sidebar-heading">Notes</h2>
+            <textarea class="notes-area" placeholder="Add notes here..."></textarea>
+            
+            <h2 class="sidebar-heading">Scene Outline</h2>
+            <ul class="scene-outline">
+                <li>Scene 1 - Coffee Shop Introduction</li>
+                <li>Scene 2 - First Meeting</li>
+                <li class="add-scene">+ Add New Scene</li>
+            </ul>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
